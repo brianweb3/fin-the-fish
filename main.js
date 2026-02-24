@@ -34,7 +34,6 @@
           '<td>' + escapeHtml(t.text) + '</td>' +
           '<td><a href="' + escapeAttr(t.url) + '" target="_blank" rel="noopener">Open</a></td>' +
           '<td>' + t.likes + '</td>' +
-          '<td>' + t.retweets + '</td>' +
           '<td>' + formatViews(t.views) + '</td>' +
         '</tr>'
       );
