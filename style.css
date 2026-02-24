@@ -661,14 +661,17 @@ body {
     min-height: auto;
   }
 
-  .header-window {
-    max-width: 740px;
-  }
 }
 
 .right-sidebar .about-fin .window-body {
   flex: 1;
   overflow-y: auto;
+}
+
+@media (max-width: 900px) {
+  .header-window {
+    max-width: 620px;
+  }
 }
 
 /* ——— Fin's thoughts panel (inside right sidebar) ——— */
