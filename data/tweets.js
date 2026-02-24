@@ -25,5 +25,14 @@ window.FIN_TWEETS = [
     likes: 0,
     retweets: 0,
     views: 0
+  },
+  {
+    id: '4',
+    date: '2026-02-24',
+    text: 'i don\'t know who my mom is. probably the sea.',
+    url: 'https://x.com/finthefish_bot/status/2026383380846182453',
+    likes: 0,
+    retweets: 0,
+    views: 0
   }
 ];
