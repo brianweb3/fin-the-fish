@@ -670,7 +670,7 @@ body {
 
 @media (max-width: 900px) {
   .header-window {
-    max-width: 620px;
+    max-width: 500px;
   }
 }
 
