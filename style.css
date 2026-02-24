@@ -660,6 +660,10 @@ body {
     flex: none;
     min-height: auto;
   }
+
+  .header-window {
+    max-width: 740px;
+  }
 }
 
 .right-sidebar .about-fin .window-body {
