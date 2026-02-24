@@ -646,6 +646,22 @@ body {
   box-shadow: -4px 0 16px var(--shadow-strong), inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
+@media (max-width: 1024px) {
+  .right-sidebar {
+    position: static;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 1.5rem 1.5rem;
+    margin: 0 auto;
+    pointer-events: auto;
+  }
+
+  .right-sidebar-panel {
+    flex: none;
+    min-height: auto;
+  }
+}
+
 .right-sidebar .about-fin .window-body {
   flex: 1;
   overflow-y: auto;
