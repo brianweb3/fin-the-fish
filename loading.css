@@ -1,0 +1,1413 @@
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:400,700");
+
+.loader-overlay {
+  position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 9999;
+  background: linear-gradient(165deg, #0f1f38 0%, #172f55 35%, #153b6d 70%, #134683 100%);
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.loader-overlay.loader-done { opacity: 0; visibility: hidden; pointer-events: none; }
+.loader-scale-wrap { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+.loader-scale-wrap .container-center-horizontal { transform: scale(min(100vw/1440, 100vh/810)); transform-origin: center center; }
+.loader-overlay .loading, .loader-overlay .loading-1, .loader-overlay .loading-2, .loader-overlay .loading-3, .loader-overlay .loading-4, .loader-overlay .loading-4-1, .loader-overlay .loading-4-2, .loader-overlay .loading-5 { background-color: transparent !important; }
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.loading {
+  background-color: #212121;
+  cursor: pointer;
+  height: 810px;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.loading .rectangle-15-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  border: 5px solid #ffffff;
+  border-radius: 22px;
+  height: 68px;
+  left: 672px;
+  opacity: 1;
+  position: absolute;
+  top: 251px;
+  width: 70px;
+}
+
+.loading .rectangle-14-C61RwL {
+  --z-index: 1;
+  background-color: #212121;
+  border: 5px solid #ffffff;
+  border-radius: 34px;
+  height: 227px;
+  left: 641px;
+  opacity: 1;
+  pointer-events: auto;
+  position: absolute;
+  top: 277px;
+  transition: all 0.2s ease;
+  width: 131px;
+}
+
+.loading .rectangle-14-C61RwL:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.loading .rectangle-16-C61RwL {
+  --z-index: 2;
+  background-color: #1a3a57;
+  border-radius: 35px;
+  height: 97px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 396px;
+  width: 107px;
+}
+
+.loading .rectangle-17-C61RwL {
+  --z-index: 3;
+  background-color: #1e68ac;
+  border-radius: 35px;
+  height: 81px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 412px;
+  width: 107px;
+}
+
+.loading .rectangle-18-C61RwL {
+  --z-index: 4;
+  background-color: #3996eb;
+  border-radius: 35px;
+  height: 63px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 430px;
+  width: 107px;
+}
+
+.loading .rectangle-19-C61RwL {
+  --z-index: 5;
+  background-color: #73b3ef;
+  border-radius: 35px;
+  height: 49px;
+  left: 654px;
+  opacity: 1;
+  position: absolute;
+  top: 444px;
+  width: 106px;
+}
+
+.loading .line-20-C61RwL {
+  --z-index: 6;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/T3f4Nj7F/line-20-1x.png);
+  background-size: 100% 100%;
+  height: 77px;
+  left: 706px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 254px;
+  width: 2px;
+}
+
+.loading .ellipse-3-C61RwL {
+  --z-index: 7;
+  background-color: #ffffff;
+  border-radius: 3.5px/4px;
+  height: 8px;
+  left: 703px;
+  opacity: 1;
+  position: absolute;
+  top: 327px;
+  width: 7px;
+}
+
+.loading .path-7-C61RwL {
+  --z-index: 8;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/3x1bsyzR/path-7-1-1x.png);
+  background-size: 100% 100%;
+  height: 31px;
+  left: 693px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 331px;
+  width: 15px;
+}
+
+.loading .icon-awesome-fish-C61RwL {
+  --z-index: 9;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/ZYv2W5v7/icon-awesome-fish-1x.png);
+  background-size: 100% 100%;
+  height: 34px;
+  left: 202px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 608px;
+  width: 46px;
+}
+
+.loading .icon-awesome-fish-VMr6Om {
+  --z-index: 10;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/FF2tpLQX/icon-awesome-fish-10-1x.png);
+  background-size: 100% 100%;
+  height: 29px;
+  left: 797px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 416px;
+  width: 44px;
+}
+
+.loading .icon-awesome-fish-mzXdH9 {
+  --z-index: 11;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/Dys9Mw2J/icon-awesome-fish-2-1x.png);
+  background-size: 100% 100%;
+  height: 28px;
+  left: 567px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 354px;
+  width: 43px;
+}
+
+.loading .loading-C61RwL {
+  --z-index: 12;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Red Hat Display", Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 573px;
+  letter-spacing: 6.4px;
+  line-height: 32px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 524px;
+  white-space: nowrap;
+  width: auto;
+}
+
+/* screen - loading-1 */
+.loading-1 {
+  background-color: #212121;
+  cursor: pointer;
+  height: 810px;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.loading-1 .rectangle-15-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  border: 5px solid #ffffff;
+  border-radius: 22px;
+  height: 68px;
+  left: 672px;
+  opacity: 1;
+  position: absolute;
+  top: 251px;
+  width: 70px;
+}
+
+.loading-1 .rectangle-14-C61RwL {
+  --z-index: 1;
+  background-color: #212121;
+  border: 5px solid #ffffff;
+  border-radius: 34px;
+  height: 227px;
+  left: 641px;
+  opacity: 1;
+  pointer-events: auto;
+  position: absolute;
+  top: 277px;
+  transition: all 0.2s ease;
+  width: 131px;
+}
+
+.loading-1 .rectangle-14-C61RwL:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.loading-1 .rectangle-16-C61RwL {
+  --z-index: 2;
+  background-color: #1a3a57;
+  border-radius: 35px;
+  height: 206px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 287px;
+  width: 107px;
+}
+
+.loading-1 .rectangle-17-C61RwL {
+  --z-index: 3;
+  background-color: #1e68ac;
+  border-radius: 35px;
+  height: 201px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 292px;
+  width: 107px;
+}
+
+.loading-1 .rectangle-18-C61RwL {
+  --z-index: 4;
+  background-color: #3996eb;
+  border-radius: 35px;
+  height: 195px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 298px;
+  width: 107px;
+}
+
+.loading-1 .rectangle-19-C61RwL {
+  --z-index: 5;
+  background-color: #73b3ef;
+  border-radius: 35px;
+  height: 190px;
+  left: 654px;
+  opacity: 1;
+  position: absolute;
+  top: 303px;
+  width: 106px;
+}
+
+.loading-1 .line-20-C61RwL {
+  --z-index: 6;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/QxLP1ZpX/line-20-1-1x.png);
+  background-size: 100% 100%;
+  height: 174px;
+  left: 706px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 254px;
+  width: 2px;
+}
+
+.loading-1 .ellipse-3-C61RwL {
+  --z-index: 7;
+  background-color: #ffffff;
+  border-radius: 3.5px/4px;
+  height: 8px;
+  left: 703px;
+  opacity: 1;
+  position: absolute;
+  top: 424px;
+  width: 7px;
+}
+
+.loading-1 .path-7-C61RwL {
+  --z-index: 8;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/3x1bsyzR/path-7-1-1x.png);
+  background-size: 100% 100%;
+  height: 31px;
+  left: 693px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 428px;
+  width: 15px;
+}
+
+.loading-1 .icon-awesome-fish-C61RwL {
+  --z-index: 9;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/YCH5KB9X/icon-awesome-fish-3-1x.png);
+  background-size: 100% 100%;
+  height: 29px;
+  left: 780px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 376px;
+  width: 44px;
+}
+
+.loading-1 .icon-awesome-fish-VMr6Om {
+  --z-index: 10;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/FF2tpLQX/icon-awesome-fish-10-1x.png);
+  background-size: 100% 100%;
+  height: 29px;
+  left: 582px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 348px;
+  width: 44px;
+}
+
+.loading-1 .icon-awesome-fish-mzXdH9 {
+  --z-index: 11;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/Dys9Mw2J/icon-awesome-fish-2-1x.png);
+  background-size: 100% 100%;
+  height: 28px;
+  left: 787px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 476px;
+  width: 43px;
+}
+
+.loading-1 .loading-C61RwL {
+  --z-index: 12;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Red Hat Display", Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 573px;
+  letter-spacing: 6.4px;
+  line-height: 32px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 524px;
+  white-space: nowrap;
+  width: auto;
+}
+
+/* screen - loading-2 */
+.loading-2 {
+  background-color: #212121;
+  cursor: pointer;
+  height: 810px;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.loading-2 .rectangle-15-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  border: 5px solid #ffffff;
+  border-radius: 22px;
+  height: 68px;
+  left: 672px;
+  opacity: 1;
+  position: absolute;
+  top: 251px;
+  width: 70px;
+}
+
+.loading-2 .rectangle-14-C61RwL {
+  --z-index: 1;
+  background-color: #212121;
+  border: 5px solid #ffffff;
+  border-radius: 34px;
+  height: 227px;
+  left: 641px;
+  opacity: 1;
+  pointer-events: auto;
+  position: absolute;
+  top: 277px;
+  transition: all 0.2s ease;
+  width: 131px;
+}
+
+.loading-2 .rectangle-14-C61RwL:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.loading-2 .rectangle-16-C61RwL {
+  --z-index: 2;
+  background-color: #1a3a57;
+  border-radius: 35px;
+  height: 206px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 287px;
+  width: 107px;
+}
+
+.loading-2 .rectangle-17-C61RwL {
+  --z-index: 3;
+  background-color: #1e68ac;
+  border-radius: 35px;
+  height: 201px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 292px;
+  width: 107px;
+}
+
+.loading-2 .rectangle-18-C61RwL {
+  --z-index: 4;
+  background-color: #3996eb;
+  border-radius: 35px;
+  height: 195px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 298px;
+  width: 107px;
+}
+
+.loading-2 .rectangle-19-C61RwL {
+  --z-index: 5;
+  background-color: #73b3ef;
+  border-radius: 35px;
+  height: 190px;
+  left: 654px;
+  opacity: 1;
+  position: absolute;
+  top: 303px;
+  width: 106px;
+}
+
+.loading-2 .line-20-C61RwL {
+  --z-index: 6;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/T3f4Nj7F/line-20-1x.png);
+  background-size: 100% 100%;
+  height: 174px;
+  left: 706px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 254px;
+  width: 2px;
+}
+
+.loading-2 .ellipse-3-C61RwL {
+  --z-index: 7;
+  background-color: #ffffff;
+  border-radius: 3.5px/4px;
+  height: 8px;
+  left: 703px;
+  opacity: 1;
+  position: absolute;
+  top: 424px;
+  width: 7px;
+}
+
+.loading-2 .path-7-C61RwL {
+  --z-index: 8;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/3x1bsyzR/path-7-1-1x.png);
+  background-size: 100% 100%;
+  height: 31px;
+  left: 693px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 428px;
+  width: 15px;
+}
+
+.loading-2 .icon-awesome-fish-C61RwL {
+  --z-index: 9;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/FF2tpLQX/icon-awesome-fish-10-1x.png);
+  background-size: 100% 100%;
+  height: 29px;
+  left: 786px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 376px;
+  width: 44px;
+}
+
+.loading-2 .icon-awesome-fish-VMr6Om {
+  --z-index: 10;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/YCH5KB9X/icon-awesome-fish-3-1x.png);
+  background-size: 100% 100%;
+  height: 29px;
+  left: 582px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 348px;
+  width: 44px;
+}
+
+.loading-2 .icon-awesome-fish-mzXdH9 {
+  --z-index: 11;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/Y24KQxZx/icon-awesome-fish-8-1x.png);
+  background-size: 100% 100%;
+  height: 28px;
+  left: 780px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 476px;
+  width: 43px;
+}
+
+.loading-2 .loading-C61RwL {
+  --z-index: 12;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Red Hat Display", Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 573px;
+  letter-spacing: 6.4px;
+  line-height: 32px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 524px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.loading-3 {
+  background-color: #212121;
+  cursor: pointer;
+  height: 810px;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.loading-3 .rectangle-15-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  border: 5px solid #ffffff;
+  border-radius: 22px;
+  height: 68px;
+  left: 672px;
+  opacity: 1;
+  position: absolute;
+  top: 251px;
+  width: 70px;
+}
+
+.loading-3 .rectangle-14-C61RwL {
+  --z-index: 1;
+  background-color: #212121;
+  border: 5px solid #ffffff;
+  border-radius: 34px;
+  height: 227px;
+  left: 641px;
+  opacity: 1;
+  pointer-events: auto;
+  position: absolute;
+  top: 277px;
+  transition: all 0.2s ease;
+  width: 131px;
+}
+
+.loading-3 .rectangle-14-C61RwL:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.loading-3 .rectangle-16-C61RwL {
+  --z-index: 2;
+  background-color: #1a3a57;
+  border-radius: 35px;
+  height: 206px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 287px;
+  width: 107px;
+}
+
+.loading-3 .rectangle-17-C61RwL {
+  --z-index: 3;
+  background-color: #1e68ac;
+  border-radius: 35px;
+  height: 201px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 292px;
+  width: 107px;
+}
+
+.loading-3 .rectangle-18-C61RwL {
+  --z-index: 4;
+  background-color: #3996eb;
+  border-radius: 35px;
+  height: 195px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 298px;
+  width: 107px;
+}
+
+.loading-3 .rectangle-19-C61RwL {
+  --z-index: 5;
+  background-color: #73b3ef;
+  border-radius: 35px;
+  height: 190px;
+  left: 654px;
+  opacity: 1;
+  position: absolute;
+  top: 303px;
+  width: 106px;
+}
+
+.loading-3 .line-20-C61RwL {
+  --z-index: 6;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/T3f4Nj7F/line-20-1x.png);
+  background-size: 100% 100%;
+  height: 174px;
+  left: 706px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 254px;
+  width: 2px;
+}
+
+.loading-3 .ellipse-3-C61RwL {
+  --z-index: 7;
+  background-color: #ffffff;
+  border-radius: 3.5px/4px;
+  height: 8px;
+  left: 703px;
+  opacity: 1;
+  position: absolute;
+  top: 424px;
+  width: 7px;
+}
+
+.loading-3 .path-7-C61RwL {
+  --z-index: 8;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/3x1bsyzR/path-7-1-1x.png);
+  background-size: 100% 100%;
+  height: 31px;
+  left: 693px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 428px;
+  width: 15px;
+}
+
+.loading-3 .icon-awesome-fish-C61RwL {
+  --z-index: 9;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/wjQS94R9/icon-awesome-fish-12-1x.png);
+  background-size: 100% 100%;
+  height: 29px;
+  left: 780px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 376px;
+  width: 44px;
+}
+
+.loading-3 .icon-awesome-fish-VMr6Om {
+  --z-index: 10;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/FF2tpLQX/icon-awesome-fish-10-1x.png);
+  background-size: 100% 100%;
+  height: 29px;
+  left: 582px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 348px;
+  width: 44px;
+}
+
+.loading-3 .icon-awesome-fish-mzXdH9 {
+  --z-index: 11;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/G2HNJc7p/icon-awesome-fish-11-1x.png);
+  background-size: 100% 100%;
+  height: 46px;
+  left: 691px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 438px;
+  width: 43px;
+}
+
+.loading-3 .loading-C61RwL {
+  --z-index: 12;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Red Hat Display", Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 573px;
+  letter-spacing: 6.4px;
+  line-height: 32px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 524px;
+  white-space: nowrap;
+  width: auto;
+}
+
+/* screen - loading-4 */
+.loading-4 {
+  background-color: #212121;
+  cursor: pointer;
+  height: 810px;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.loading-4 .rectangle-15-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  border: 5px solid #ffffff;
+  border-radius: 22px;
+  height: 68px;
+  left: 672px;
+  opacity: 1;
+  position: absolute;
+  top: 251px;
+  width: 70px;
+}
+
+.loading-4 .rectangle-14-C61RwL {
+  --z-index: 1;
+  background-color: #212121;
+  border: 5px solid #ffffff;
+  border-radius: 34px;
+  height: 227px;
+  left: 641px;
+  opacity: 1;
+  pointer-events: auto;
+  position: absolute;
+  top: 277px;
+  transition: all 0.2s ease;
+  width: 131px;
+}
+
+.loading-4 .rectangle-14-C61RwL:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.loading-4 .rectangle-16-C61RwL {
+  --z-index: 2;
+  background-color: #1a3a57;
+  border-radius: 35px;
+  height: 206px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 287px;
+  width: 107px;
+}
+
+.loading-4 .rectangle-17-C61RwL {
+  --z-index: 3;
+  background-color: #1e68ac;
+  border-radius: 35px;
+  height: 201px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 292px;
+  width: 107px;
+}
+
+.loading-4 .rectangle-18-C61RwL {
+  --z-index: 4;
+  background-color: #3996eb;
+  border-radius: 35px;
+  height: 195px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 298px;
+  width: 107px;
+}
+
+.loading-4 .rectangle-19-C61RwL {
+  --z-index: 5;
+  background-color: #73b3ef;
+  border-radius: 35px;
+  height: 190px;
+  left: 654px;
+  opacity: 1;
+  position: absolute;
+  top: 303px;
+  width: 106px;
+}
+
+.loading-4 .line-20-C61RwL {
+  --z-index: 6;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/m2QnSpw7/line-20-4-1x.png);
+  background-size: 100% 100%;
+  height: 66px;
+  left: 706px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 254px;
+  width: 2px;
+}
+
+.loading-4 .ellipse-3-C61RwL {
+  --z-index: 7;
+  background-color: #ffffff;
+  border-radius: 3.5px/4px;
+  height: 8px;
+  left: 703px;
+  opacity: 1;
+  position: absolute;
+  top: 316px;
+  width: 7px;
+}
+
+.loading-4 .path-7-C61RwL {
+  --z-index: 8;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/3x1bsyzR/path-7-1-1x.png);
+  background-size: 100% 100%;
+  height: 31px;
+  left: 693px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 320px;
+  width: 15px;
+}
+
+.loading-4 .icon-awesome-fish-C61RwL {
+  --z-index: 9;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/wjQS94R9/icon-awesome-fish-12-1x.png);
+  background-size: 100% 100%;
+  height: 29px;
+  left: 780px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 376px;
+  width: 44px;
+}
+
+.loading-4 .icon-awesome-fish-VMr6Om {
+  --z-index: 10;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/FF2tpLQX/icon-awesome-fish-10-1x.png);
+  background-size: 100% 100%;
+  height: 29px;
+  left: 582px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 348px;
+  width: 44px;
+}
+
+.loading-4 .icon-awesome-fish-mzXdH9 {
+  --z-index: 11;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/vmPkV1vj/icon-awesome-fish-14-1x.png);
+  background-size: 100% 100%;
+  height: 46px;
+  left: 691px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 334px;
+  width: 37px;
+}
+
+.loading-4 .loading-C61RwL {
+  --z-index: 12;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Red Hat Display", Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 573px;
+  letter-spacing: 6.4px;
+  line-height: 32px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 524px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.loading-4 .icon-awesome-smile-beam-C61RwL {
+  --z-index: 13;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/KjTHw0yS/icon-awesome-smile-beam-1-1x.png);
+  background-size: 100% 100%;
+  height: 32px;
+  left: 691px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 213px;
+  width: 32px;
+}
+
+.loading-4-1 {
+  background-color: #212121;
+  cursor: pointer;
+  height: 810px;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.loading-4-1 .rectangle-15-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  border: 5px solid #ffffff;
+  border-radius: 22px;
+  height: 68px;
+  left: 672px;
+  opacity: 1;
+  position: absolute;
+  top: 251px;
+  width: 70px;
+}
+
+.loading-4-1 .rectangle-14-C61RwL {
+  --z-index: 1;
+  background-color: #212121;
+  border: 5px solid #ffffff;
+  border-radius: 34px;
+  height: 227px;
+  left: 641px;
+  opacity: 1;
+  pointer-events: auto;
+  position: absolute;
+  top: 277px;
+  transition: all 0.2s ease;
+  width: 131px;
+}
+
+.loading-4-1 .rectangle-14-C61RwL:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.loading-4-1 .rectangle-16-C61RwL {
+  --z-index: 2;
+  background-color: #1a3a57;
+  border-radius: 35px;
+  height: 206px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 287px;
+  width: 107px;
+}
+
+.loading-4-1 .rectangle-17-C61RwL {
+  --z-index: 3;
+  background-color: #1e68ac;
+  border-radius: 35px;
+  height: 201px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 292px;
+  width: 107px;
+}
+
+.loading-4-1 .rectangle-18-C61RwL {
+  --z-index: 4;
+  background-color: #3996eb;
+  border-radius: 35px;
+  height: 195px;
+  left: 653px;
+  opacity: 1;
+  position: absolute;
+  top: 298px;
+  width: 107px;
+}
+
+.loading-4-1 .rectangle-19-C61RwL {
+  --z-index: 5;
+  background-color: #73b3ef;
+  border-radius: 35px;
+  height: 190px;
+  left: 654px;
+  opacity: 1;
+  position: absolute;
+  top: 303px;
+  width: 106px;
+}
+
+.loading-4-1 .line-20-C61RwL {
+  --z-index: 6;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/m2QnSpw7/line-20-4-1x.png);
+  background-size: 100% 100%;
+  height: 66px;
+  left: 706px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 254px;
+  width: 2px;
+}
+
+.loading-4-1 .ellipse-3-C61RwL {
+  --z-index: 7;
+  background-color: #ffffff;
+  border-radius: 3.5px/4px;
+  height: 8px;
+  left: 703px;
+  opacity: 1;
+  position: absolute;
+  top: 316px;
+  width: 7px;
+}
+
+.loading-4-1 .path-7-C61RwL {
+  --z-index: 8;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/3x1bsyzR/path-7-1-1x.png);
+  background-size: 100% 100%;
+  height: 31px;
+  left: 693px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 320px;
+  width: 15px;
+}
+
+.loading-4-1 .icon-awesome-fish-C61RwL {
+  --z-index: 9;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/wjQS94R9/icon-awesome-fish-12-1x.png);
+  background-size: 100% 100%;
+  height: 29px;
+  left: 780px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 376px;
+  width: 44px;
+}
+
+.loading-4-1 .icon-awesome-fish-VMr6Om {
+  --z-index: 10;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/FF2tpLQX/icon-awesome-fish-10-1x.png);
+  background-size: 100% 100%;
+  height: 29px;
+  left: 582px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 348px;
+  width: 44px;
+}
+
+.loading-4-1 .icon-awesome-fish-mzXdH9 {
+  --z-index: 11;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/vmPkV1vj/icon-awesome-fish-14-1x.png);
+  background-size: 100% 100%;
+  height: 46px;
+  left: 691px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 334px;
+  width: 37px;
+}
+
+.loading-4-1 .loading-C61RwL {
+  --z-index: 12;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Red Hat Display", Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 573px;
+  letter-spacing: 6.4px;
+  line-height: 32px;
+  opacity: 0;
+  position: absolute;
+  text-align: left;
+  top: 524px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.loading-4-1 .icon-awesome-smile-beam-C61RwL {
+  --z-index: 13;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/KjTHw0yS/icon-awesome-smile-beam-1-1x.png);
+  background-size: 100% 100%;
+  height: 32px;
+  left: 691px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 213px;
+  width: 32px;
+}
+
+.loading-4-1 .logo-C61RwL {
+  --z-index: 14;
+  background-color: transparent;
+  height: 48px;
+  left: 612px;
+  opacity: 1;
+  position: absolute;
+  top: 149px;
+  width: 280px;
+}
+
+.loading-4-1 .fishing-exFKkL {
+  --z-index: 0;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Red Hat Display", Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 0px;
+  letter-spacing: -2.38px;
+  line-height: 36px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.loading-4-1 .icon-awesome-fish-exFKkL {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/k5MLGNWK/icon-awesome-fish-18-1x.png);
+  background-size: 100% 100%;
+  height: 24px;
+  left: 262px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 6px;
+  width: 41px;
+}
+
+/* screen - loading-4-2 */
+.loading-4-2 {
+  background-color: #212121;
+  cursor: pointer;
+  height: 810px;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.loading-4-2 .logo-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  height: 48px;
+  left: 607px;
+  opacity: 1;
+  position: relative;
+  top: 147px;
+  width: 280px;
+}
+
+.loading-4-2 .fishing-exFKkL {
+  --z-index: 0;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Red Hat Display", Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 0px;
+  letter-spacing: -2.38px;
+  line-height: 36px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.loading-4-2 .icon-awesome-fish-exFKkL {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/k5MLGNWK/icon-awesome-fish-18-1x.png);
+  background-size: 100% 100%;
+  height: 24px;
+  left: 263px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 7px;
+  width: 41px;
+}
+
+/* screen - loading-5 */
+.loading-5 {
+  background-color: #212121;
+  height: 810px;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.loading-5 .logo-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  height: 81px;
+  left: 568px;
+  opacity: 1;
+  position: relative;
+  top: 364px;
+  width: 320px;
+}
+
+.loading-5 .fishing-exFKkL {
+  --z-index: 0;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Red Hat Display", Helvetica;
+  font-size: 61px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 0px;
+  letter-spacing: -4.03px;
+  line-height: 61px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.loading-5 .icon-awesome-fish-exFKkL {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(https://i.postimg.cc/4dq0WrqQ/icon-awesome-fish-20-1x.png);
+  background-size: 100% 100%;
+  height: 39px;
+  left: 277px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 11px;
+  width: 66px;

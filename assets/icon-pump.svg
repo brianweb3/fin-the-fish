@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="pumpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9945FF"/>
+      <stop offset="100%" style="stop-color:#14F195"/>
+    </linearGradient>
+  </defs>
+  <circle cx="12" cy="12" r="10" fill="url(#pumpGrad)" opacity="0.9"/>
+  <path fill="#fff" d="M12 6v12M6 12h12"/>
+  <circle cx="12" cy="12" r="3" fill="none" stroke="#fff" stroke-width="1.5"/>
+</svg>
