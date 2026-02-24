@@ -472,6 +472,12 @@ body {
   margin-right: auto;
 }
 
+#section-articles .content-window {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .content-window .window-titlebar {
   border-bottom: 2px solid var(--blue-600);
 }
